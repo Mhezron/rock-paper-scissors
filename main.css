@@ -1,0 +1,62 @@
+body{
+    background-image: url(paperscissors.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+h1{
+    text-align: center;
+    color: pink;
+    margin:auto;
+    padding-top: 30pz;
+    text-shadow: 2px 2px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.buttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+    margin: 50px;
+    border: 1px;
+}
+
+#btn1{
+    background-color: blue;
+    color: white;
+    font-size: bold;
+    margin: 40px;
+    height: 60px;
+    width: 100px;
+    border-radius: 5px 25px;
+    box-shadow: 3px 3px 8px 0 #000;
+}
+
+#btn2{
+    background-color: blue;
+    color: white;
+    font-size: bold;
+    margin: 40px;
+    height: 60px;
+    width: 100px;
+    border-radius: 5px 25px;
+    box-shadow: 3px 3px 8px 0 #000;
+}
+
+#btn3{
+    background-color: blue;
+    color: white;
+    font-size: bold;
+    margin: 40px;
+    height: 60px;
+    width: 100px;
+    border-radius: 5px 25px;
+    box-shadow: 3px 3px 8px 0 #000;
+}
