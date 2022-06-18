@@ -9,3 +9,5 @@
 //}
 
 
+const btn = document.querySelector('#btn1');
+btn.onclick = () => alert("hello world");
