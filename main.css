@@ -1,62 +1,139 @@
-body{
-    background-image: url(paperscissors.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+
+*{
+	padding: 10;
+	margin: 0;
+	box-sizing: border-box;
+	background: #e3e0cf;
+	color: #CD5646FF;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 4rem;
+	z-index: 2;
+    text-shadow:2px 2px 3px grey;
 
 }
 
-h1{
-    text-align: center;
-    color: pink;
-    margin:auto;
-    padding-top: 30pz;
-    text-shadow: 2px 2px black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-family: cursive;
+
+.score{
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+    padding: 20px;
+	z-index: 1;
+    text-shadow:2px 2px 2px grey;
 }
 
-.buttons{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 150px;
-    margin: 50px;
-    border: 1px;
+
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
 }
 
-#btn1{
-    background-color: blue;
+
+.options{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+
+.rock, .paper, .scissor{
+	padding: 1rem;
+	width: 100px;
+	border-radius: 10px;
+	background: aqua;
+	outline: none;
+	border-color: white;
+	border: none;
+	cursor: pointer;
+    color: sandybrown;
+    font-size: large;
+    box-shadow:20px 20px 50px 10px grey;
+}
+
+.move{
+	font-size: 2rem;
+	font-weight: bold;
+    text-shadow:2px 2px 2px grey;
+}
+
+
+.reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: #84F1E0FF;
+    box-shadow: 20px 20px 50px 10px grey;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
     color: white;
-    font-size: bold;
-    margin: 40px;
-    height: 60px;
-    width: 100px;
-    border-radius: 5px 25px;
-    box-shadow: 3px 3px 8px 0 #000;
+    font-size: large;
 }
 
-#btn2{
-    background-color: blue;
-    color: white;
-    font-size: bold;
-    margin: 40px;
-    height: 60px;
-    width: 100px;
-    border-radius: 5px 25px;
-    box-shadow: 3px 3px 8px 0 #000;
+.result{
+	margin-top: 70px;
+	font-size: 2rem;
+    text-shadow:2px 2px 2px grey;
+    background-color: #e3e0cf;
 }
 
-#btn3{
-    background-color: blue;
-    color: white;
-    font-size: bold;
-    margin: 40px;
-    height: 60px;
-    width: 100px;
-    border-radius: 5px 25px;
-    box-shadow: 3px 3px 8px 0 #000;
+
+@media screen and (max-width: 612px)
+{
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
 }
+
+.rock:hover{
+    background-color: aqua;
+    color: sandybrown;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.paper:hover{
+    background-color: aqua;
+    color: sandybrown;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.scissor {
+    background-color: aqua;
+    color: sandybrown;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .rock:hover {opacity: 0.6}
+  .paper:hover {opacity: 0.6}
+  .scissor:hover {opacity: 0.6}

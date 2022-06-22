@@ -1,23 +1,42 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <title>Rock paper scissors</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>	&#128515;Rock Paper Scissor</title>
 </head>
 <body>
-    <h1>Rock paper scissors</h1>
+	<section class="game">
+	
+		<div class="title">Rock Paper Scissor</div>
+		
+		<div class="score">
+			<div class="playerScore">
+				<h2>Player</h2>
+				<p class="p-count count">0</p>
+			</div>	
+			<div class="computerScore">
+				<h2>Computer</h2>
+				<p class="c-count count">0</p>
+			</div>
+		</div>	
+		<div class="move">Choose your move</div>
+				<div class="movesleft">Moves Left: 10 </div>
+		
+		<div class="options">
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissor">Scissor</button>
+		</div>
+		
+		<div class="result"></div>
+		<button class="reload"></button>
 
-    <div class="buttons">
-    <button id="btn1">Rock</button>
-    <button id="btn2">Paper</button>
-    <button id="btn3">Scissors</button>
-    </div>
+	</section>
 
-    <p id="para"></p>
-    
+	<script src="/main.js"></script>
 </body>
 </html>
